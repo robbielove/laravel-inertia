@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* use the fonts (varela round, noto sans - all) by default */
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Varela Round', sans-serif;
+}
+

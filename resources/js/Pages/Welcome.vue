@@ -13,9 +13,17 @@ defineProps({
 <template>
     <Head title="Welcome" />
 
-    <div class="relative flex items-top justify-center min-h-screen bg-gradient-to-br from-violet-900 to-green-600">
+    <div class="justify-center min-h-screen bg-gradient-to-br from-violet-900 to-green-600">
 
-        <div class="m-5 p-5">
+        <div class="ml-5 mr-5 pb-0 mb-0 pl-5 pr-5">
+            <div class="px-6 py-6 rounded-b-xl shadow-lg bg-black/20">
+                <div class="flex items-center justify-center">
+                    <h1 class="text-7xl font-bold text-white">{{ domain }}</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="ml-5 mr-5 p-5">
             <div v-if="canLogin" class="hidden p-5 sm:block">
                 <Link v-if="$page.props.user" :href="route('dashboard')" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</Link>
 
@@ -26,16 +34,16 @@ defineProps({
                 </template>
             </div>
             <div class="mt-5 mb-5 p-5 bg-black/20 overflow-hidden shadow sm:rounded-lg">
-                <div class="text-6xl text-white">
-                    Laravel on {{ domain }}
-                </div>
+                <h1 class="text-6xl text-white">
+                    Laravel
+                </h1>
 
-                <div class="mt-6 text-white text-2xl">
+                <h2 class="mt-6 text-white text-2xl">
                     Laravel Jetstream provides a beautiful, robust starting point for your next Laravel application. Laravel is designed
                     to help you build your application using a development environment that is simple, powerful, and enjoyable. We
                     believe you should love expressing your creativity through programming, so we have spent time carefully crafting
                     the Laravel ecosystem to be a breath of fresh air. We hope you love it.
-                </div>
+                </h2>
             </div>
 
             <div class="flex justify-center mt-4 p-5 sm:items-center sm:justify-between">
