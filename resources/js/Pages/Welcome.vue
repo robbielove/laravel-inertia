@@ -6,6 +6,7 @@ defineProps({
     canRegister: Boolean,
     laravelVersion: String,
     phpVersion: String,
+    domain: String,
 });
 </script>
 
@@ -26,7 +27,7 @@ defineProps({
             </div>
             <div class="mt-5 mb-5 p-5 bg-black/20 overflow-hidden shadow sm:rounded-lg">
                 <div class="text-6xl text-white">
-                    Welcome to your Jetstream application!
+                    Laravel on {{ domain }}
                 </div>
 
                 <div class="mt-6 text-white text-2xl">
@@ -72,10 +73,10 @@ defineProps({
                             Sponsor
                         </a>
                     </div>
-                </div>
 
-                <div class="ml-4 text-center text-sm text-gray-500 sm:text-right sm:ml-0">
-                    Laravel v{{ laravelVersion }} (PHP v{{ phpVersion }})
+                    <div class="mt-4 text-center text-sm text-white sm:text-right sm:ml-0">
+                        Laravel v{{ laravelVersion }} (PHP v{{ phpVersion }}) {{ domain}}
+                    </div>
                 </div>
             </div>
         </div>
